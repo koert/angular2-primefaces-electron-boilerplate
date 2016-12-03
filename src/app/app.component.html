@@ -1,30 +1,48 @@
-<md-sidenav-layout>
-
-    <md-toolbar color="primary">
-        Angular Material2 Example App
-    </md-toolbar>
-
-    <div class="container">
-        <md-tab-group class="demo-tab-group">
-            <md-tab label="Hello">
-                <h1>{{title}}</h1>
-                <small>{{message}}</small>
-
-                <div>
-                    <md-input type="text" [(ngModel)]="message"></md-input>
-                </div>
-
-                <button md-raised-button color="primary" (click)="test()">Click me</button>
-                <button md-raised-button (click)="announce()">Announce</button>
-            </md-tab>
-            <md-tab label="Image">
-                <md-card>
-                    <div>
-                        <img *ngIf="imagePath" src="{{imagePath}}">
-                    </div>
-                    <button md-raised-button color="primary" (click)="openImageFileSelect()">Select image file</button>
-                </md-card>
-            </md-tab>
-        </md-tab-group>
+<div>
+  <p-growl [value]="messages"></p-growl>
+  <div class="ui-g app-header">
+    <div class="ui-g-3">
+      <!--<img src="image/headerLogo.png"/>-->
     </div>
-</md-sidenav-layout>
+    <div class="ui-g-9">
+      <h1>Angular PrimeNG Example App</h1>
+    </div>
+  </div>
+</div>
+<div>
+  <!--<router-outlet></router-outlet>-->
+  <h1>{{title}}</h1>
+  <small>{{message}}</small>
+</div>
+
+
+<!--<md-sidenav-layout>-->
+
+  <!--<md-toolbar color="primary">-->
+    <!--Angular Material2 Example App-->
+  <!--</md-toolbar>-->
+
+  <!--<div class="container">-->
+    <!--<md-tab-group class="demo-tab-group">-->
+      <!--<md-tab label="Hello">-->
+        <!--<h1>{{title}}</h1>-->
+        <!--<small>{{message}}</small>-->
+
+        <!--<div>-->
+          <!--<md-input type="text" [(ngModel)]="message"></md-input>-->
+        <!--</div>-->
+
+        <!--<button md-raised-button color="primary" (click)="test()">Click me</button>-->
+        <!--<button md-raised-button (click)="announce()">Announce</button>-->
+      <!--</md-tab>-->
+      <!--<md-tab label="Image">-->
+        <!--<md-card>-->
+          <!--<div>-->
+            <!--<img *ngIf="imagePath" src="{{imagePath}}">-->
+          <!--</div>-->
+          <!--<button md-raised-button color="primary" (click)="openImageFileSelect()">Select image file</button>-->
+        <!--</md-card>-->
+      <!--</md-tab>-->
+    <!--</md-tab-group>-->
+  <!--</div>-->
+<!--</md-sidenav-layout>-->
