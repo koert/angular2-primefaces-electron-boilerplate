@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
 
   public title: string = "Hello Angular 2!";
   public message: string = "Greatness awaits...";
-  messages: any[];
+  messages: any[] = [];
   public imagePath: string;
 
   ngOnInit(): void {
