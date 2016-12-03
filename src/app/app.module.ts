@@ -3,12 +3,11 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppComponent } from "./app.component";
 import { FormsModule } from "@angular/forms";
 
-import {ButtonModule} from 'primeng/primeng';
-import {GrowlModule} from 'primeng/primeng';
+import {ButtonModule, GrowlModule, PanelModule} from 'primeng/primeng';
 
 @NgModule({
   imports: [BrowserModule, FormsModule,
-    ButtonModule, GrowlModule],
+    ButtonModule, GrowlModule, PanelModule],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
 })
