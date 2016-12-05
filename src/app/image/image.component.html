@@ -1,0 +1,22 @@
+<div>
+  <p-growl [value]="messages"></p-growl>
+  <div class="ui-g app-header">
+    <div class="ui-g-3">
+    </div>
+    <div class="ui-g-9">
+      <h1>Angular PrimeNG Example App</h1>
+    </div>
+  </div>
+</div>
+<div>
+  <p-panel header="{{title}}">
+
+    <button pButton type="submit" label="Select image" class="highlight" icon="fa-search" (click)="openImageFileSelect()"></button>
+
+    <div>
+      <img *ngIf="imagePath" src="{{imagePath}}">
+    </div>
+
+  </p-panel>
+
+</div>

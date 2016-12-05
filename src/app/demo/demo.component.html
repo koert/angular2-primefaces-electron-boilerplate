@@ -1,30 +1,24 @@
 <div>
   <p-growl [value]="messages"></p-growl>
-  <router-outlet></router-outlet>
+  <div class="ui-g app-header">
+    <div class="ui-g-3">
+      <!--<img src="image/headerLogo.png"/>-->
+    </div>
+    <div class="ui-g-9">
+      <h1>Angular PrimeNG Example App</h1>
+    </div>
+  </div>
 </div>
+<div>
+  <p-panel header="{{title}}">
+    <small>{{message}}</small>
 
+    <button pButton type="submit" label="Click me" class="highlight" icon="fa-search" (click)="test()"></button>
+    <button pButton type="button" label="To image page" class="highlight" icon="fa-image" (click)="toImagePage()"></button>
 
+  </p-panel>
 
-<!--<div>-->
-  <!--<p-growl [value]="messages"></p-growl>-->
-  <!--<div class="ui-g app-header">-->
-    <!--<div class="ui-g-3">-->
-      <!--&lt;!&ndash;<img src="image/headerLogo.png"/>&ndash;&gt;-->
-    <!--</div>-->
-    <!--<div class="ui-g-9">-->
-      <!--<h1>Angular PrimeNG Example App</h1>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->
-<!--<div>-->
-  <!--<p-panel header="{{title}}">-->
-    <!--<small>{{message}}</small>-->
-
-    <!--<button pButton type="submit" label="Click me" class="highlight" icon="fa-search" (click)="test()"></button>-->
-
-  <!--</p-panel>-->
-
-<!--</div>-->
+</div>
 
 
 <!--<md-sidenav-layout>-->
