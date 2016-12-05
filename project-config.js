@@ -34,13 +34,13 @@ exports.VENDOR_FILES = [
     }
 ]
 
-exports.BOWER_PACKAGES = [
-    {
-        source: "bootstrap",
-        files: "dist/**/*"
-    },
-    {
-        source: "web-animations-js",
-        files: "web-animations.min.js"
-    }
-]
+// exports.BOWER_PACKAGES = [
+//     {
+//         source: "bootstrap",
+//         files: "dist/**/*"
+//     },
+//     {
+//         source: "web-animations-js",
+//         files: "web-animations.min.js"
+//     }
+// ]
