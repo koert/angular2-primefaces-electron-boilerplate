@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Router, ActivatedRoute, Params } from '@angular/router';
+import { Message } from 'primeng/components/common/api';
 
 const ipcRenderer = require('electron').ipcRenderer;
 
@@ -18,7 +19,7 @@ export class DemoComponent implements OnInit {
 
   public title: string = "Hello Angular 2!";
   public message: string = "Greatness awaits...";
-  messages: any[] = [];
+  messages: Message[] = [];
 
   ngOnInit(): void {
     ipcRenderer.on('reply', (event, arg) => {
